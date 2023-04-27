@@ -31,7 +31,7 @@ def determine_winner(hand1_gesture, hand2_gesture):
     return None, None
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(model_complexity=0, max_num_hands=2, min_detection_confidence=0.5)
-# Captura de vídeo da webcam (altere o valor para o caminho do vídeo, se necessário)
+# Captura de vídeo
 cap = cv2.VideoCapture('pedra-papel-tesoura.mp4')  
 # Inicialização dos placares
 score_player1 = 0
